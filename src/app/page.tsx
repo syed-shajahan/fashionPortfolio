@@ -8,12 +8,12 @@ import GridSec from "./Components/GridSection";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
       <Banner/>
       <SwibeCardSec/>
       <BrandSection/>
       <GridSec/>
-    </div>
+    </>
   );
 }
