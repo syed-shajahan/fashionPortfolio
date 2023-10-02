@@ -6,24 +6,22 @@ import { Box, Toolbar, AppBar } from "@mui/material";
 import styled from "@mui/system/styled";
 import { List, ListItem } from "@mui/material";
 
-interface ScrollProps {
-  scrolling: boolean;
+interface ScrollProps{
+  scrolling  : boolean;
 }
 
-export const CustomAppBar = styled(AppBar)<ScrollProps>(
-  ({ theme, scrolling }) => ({
-    position: "fixed",
-    width: scrolling ? "80%" : "100%",
-    left: scrolling ? "60%" : "0px",
-    background: "#1212126e",
-    padding: "6px 0px",
-    display: "flex",
-    marginBottom: "15px",
-    backdropFilter: "blur(2px)",
-    transition: "0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
-    top: scrolling ? "0" : "15px",
-  })
-);
+export const CustomAppBar = styled(AppBar)<ScrollProps>(({ theme, scrolling  }) => ({
+  position: "fixed",
+  width:scrolling  ? "80%" : "100%",
+  left: scrolling  ? "60%" : "0px",
+  background: "#1212126e",
+  padding: "6px 0px",
+  display: "flex",
+  marginBottom: "15px",
+  backdropFilter: "blur(2px)",
+  transition:"0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+  top:scrolling  ? "0" : "15px",
+}));
 
 export const CustomToolbar = styled(Toolbar)(({ theme }) => ({
   display: "flex",
@@ -34,6 +32,7 @@ export const CustomToolbar = styled(Toolbar)(({ theme }) => ({
   margin: "auto",
   padding: "0px 12px",
 }));
+
 
 export const LogoBox = styled(Box)(({ theme }) => ({
   maxWidth: "150px",

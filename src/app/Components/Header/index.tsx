@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <>
-      <CustomAppBar scrolling={scrolling}>
+      <CustomAppBar   scrolling={scrolling}>
         <CustomToolbar>
           <LogoBox>
             <LogoBoxImg
