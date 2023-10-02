@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <AboutCard>
-        hello
+        hello about is here
       </AboutCard>
     </>
   );
