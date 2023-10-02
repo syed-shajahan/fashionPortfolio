@@ -4,7 +4,10 @@ const About = () => {
   return (
     <div>
       <AboutCard>
-        hello about is here
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus,
+        ipsa rem! Sunt fugit nobis dolorem quia dicta libero iste deleniti
+        exercitationem vitae veniam ad, eveniet, ab eum tempore debitis
+        pariatur.
       </AboutCard>
     </div>
   );
