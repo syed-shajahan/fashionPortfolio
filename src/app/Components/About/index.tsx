@@ -1,13 +1,20 @@
-import React from "react";
-import { AboutCard } from "./styles";
+import React from 'react';
+import { AboutBIgTxt, AboutCard, AboutTopTxt, AboutSubTxt } from './styles';
+import { AboutTitle } from './constant';
+
 const About = () => {
   return (
     <div>
       <AboutCard>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus,
-        ipsa rem! Sunt fugit nobis dolorem quia dicta libero iste deleniti
-        exercitationem vitae veniam ad, eveniet, ab eum tempore debitis
-        pariatur.
+        <AboutTopTxt>{AboutTitle.ABOUT}</AboutTopTxt>
+
+        <AboutBIgTxt variant="h3">
+          {AboutTitle.BRINGING_FASHION_BRANDS_TO_LIFE}
+        </AboutBIgTxt>
+
+        <AboutSubTxt>{AboutTitle.DUMMY_TEXT}</AboutSubTxt>
+        <AboutSubTxt>{AboutTitle.DUMMY_TEXT}</AboutSubTxt>
+
       </AboutCard>
     </div>
   );
