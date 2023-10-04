@@ -6,6 +6,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import { GridWrapBox, GridWrapImg } from "./styles";
 import { CustomContainer } from "../Banner/styles";
 import About from "../About";
+import ListCards from "../List-Cards";
 const GridSec = () => {
   return (
     <>
@@ -26,7 +27,9 @@ const GridSec = () => {
                 <About />
               </Box>
             </Grid>
-            <Grid xs={6}></Grid>
+            <Grid xs={6}>
+              <ListCards />
+            </Grid>
             <Grid xs={6}>
               <GridWrapBox sx={{ paddingTop: "89%!important" }}>
                 <GridWrapImg
