@@ -31,7 +31,7 @@ const GridSec = () => {
               <ListCards />
             </Grid>
             <Grid xs={6}>
-              <GridWrapBox sx={{ paddingTop: "89%!important" }}>
+              <GridWrapBox sx={{ paddingTop: "97%!important" }}>
                 <GridWrapImg
                   src="/assets/images/g-2.jpg"
                   layout="fill"
