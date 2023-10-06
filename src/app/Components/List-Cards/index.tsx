@@ -9,71 +9,35 @@ import {
 import { Box } from '@mui/material';
 import { AboutSubTxt } from '../About/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-const ListCards = () => {
+
+export interface IlistDatas{
+  list_Title: string;
+  list_desc:string;
+}
+
+export interface IlistDatasProps{
+  listData: IlistDatas[];
+}
+
+const ListCards:React.FC<IlistDatasProps>=({listData}) => {
   return (
     <>
       <ListBlock>
-        <ListItemBlock>
-          <ListBlockWarp>
-            <Box>
-              <ListItemTitle>VIDEO PRODUCTION</ListItemTitle>
-              <AboutSubTxt style={{ maxWidth: '536px' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </AboutSubTxt>
-            </Box>
-            <IcnWrap>
-              <ArrowForwardIcon />
-            </IcnWrap>
-          </ListBlockWarp>
-        </ListItemBlock>
-
-        <ListItemBlock>
-          <ListBlockWarp>
-            <Box>
-              <ListItemTitle>VIDEO PRODUCTION</ListItemTitle>
-              <AboutSubTxt style={{ maxWidth: '536px' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </AboutSubTxt>
-            </Box>
-            <IcnWrap>
-              <ArrowForwardIcon />
-            </IcnWrap>
-          </ListBlockWarp>
-        </ListItemBlock>
-
-        <ListItemBlock>
-          <ListBlockWarp>
-            <Box>
-              <ListItemTitle>VIDEO PRODUCTION</ListItemTitle>
-              <AboutSubTxt style={{ maxWidth: '536px' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </AboutSubTxt>
-            </Box>
-            <IcnWrap>
-              <ArrowForwardIcon />
-            </IcnWrap>
-          </ListBlockWarp>
-        </ListItemBlock>
-        
-        <ListItemBlock>
-          <ListBlockWarp>
-            <Box>
-              <ListItemTitle>VIDEO PRODUCTION</ListItemTitle>
-              <AboutSubTxt style={{ maxWidth: '536px' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </AboutSubTxt>
-            </Box>
-            <IcnWrap>
-              <ArrowForwardIcon />
-            </IcnWrap>
-          </ListBlockWarp>
-        </ListItemBlock>
-
-        
+        {listData.map((listDatas) => (
+          <ListItemBlock key={listDatas.list_Title}>
+            <ListBlockWarp>
+              <Box>
+                <ListItemTitle>{listDatas.list_Title}</ListItemTitle>
+                <AboutSubTxt style={{ maxWidth: '536px' }}>
+                  {listDatas.list_desc}
+                </AboutSubTxt>
+              </Box>
+              <IcnWrap>
+                <ArrowForwardIcon />
+              </IcnWrap>
+            </ListBlockWarp>
+          </ListItemBlock>
+        ))}
       </ListBlock>
     </>
   );
