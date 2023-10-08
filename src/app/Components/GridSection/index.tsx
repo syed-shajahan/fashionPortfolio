@@ -11,7 +11,7 @@ const GridSec = () => {
   return (
     <>
       <CustomContainer>
-        <Box sx={{ flexGrow: 1, margin: "20px 0px" }}>
+        <Box sx={{ flexGrow: 1, margin: "20px 0px 70px" }}>
           <Grid container spacing={2}>
             <Grid lg={6} md={12} sm={12} xs={12}>
               <GridWrapBox>
