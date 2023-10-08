@@ -6,12 +6,14 @@ import SwibeCardSec from "./Components/Swipecard";
 import BrandSection from "./Components/BrandsSec";
 import GridSec from "./Components/GridSection";
 
+// data passed from below
+import  CardData from "./Components/Swipecard/swipeCards.json"
 export default function Home() {
   return (
     <>
       <Header />
       <Banner/>
-      <SwibeCardSec/>
+      <SwibeCardSec CardData={CardData} />
       <BrandSection/>
       <GridSec/>
     </>

@@ -5,74 +5,20 @@ import { ScTitle, SwipeCardWarp, ScSub, ScPara } from "./styles";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 import React, { useRef, useState } from "react";
-import SwiperCheckl from "./SwiperCheckl";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-const SwibeCardSec = () => {
-  const CardData = [
-    {
-      title: "BRANDING",
-      para: "Develop a strong, recognizable fashion brand identity.",
-      sub: "ABOUT BRANDING",
-    },
-    {
-      title: "IDENTITY",
-      para: "We create a unique and consistent image for your fashion brand.",
-      sub: "ABOUT IDENTITY",
-    },
-    {
-      title: "MARKETING",
-      para: "Reach and engage your target audience effectively on all platforms.",
-      sub: "ABOUT MARKETING",
-    },
-    {
-      title: "E-COMMERCE",
-      para: "Optimize online sales and drive growth for your e-commerce store.",
-      sub: "ABOUT E-COMMERCE",
-    },
-    {
-      title: "BRANDING",
-      para: "Develop a strong, recognizable fashion brand identity.",
-      sub: "ABOUT BRANDING",
-    },
-    {
-      title: "IDENTITY",
-      para: "We create a unique and consistent image for your fashion brand.",
-      sub: "ABOUT IDENTITY",
-    },
-    {
-      title: "MARKETING",
-      para: "Reach and engage your target audience effectively on all platforms.",
-      sub: "ABOUT MARKETING",
-    },
-    {
-      title: "E-COMMERCE",
-      para: "Optimize online sales and drive growth for your e-commerce store.",
-      sub: "ABOUT E-COMMERCE",
-    },
-    {
-      title: "BRANDING",
-      para: "Develop a strong, recognizable fashion brand identity.",
-      sub: "ABOUT BRANDING",
-    },
-    {
-      title: "IDENTITY",
-      para: "We create a unique and consistent image for your fashion brand.",
-      sub: "ABOUT IDENTITY",
-    },
-    {
-      title: "MARKETING",
-      para: "Reach and engage your target audience effectively on all platforms.",
-      sub: "ABOUT MARKETING",
-    },
-    {
-      title: "E-COMMERCE",
-      para: "Optimize online sales and drive growth for your e-commerce store.",
-      sub: "ABOUT E-COMMERCE",
-    },
-  ];
+export interface ICardData{
+  title: string,
+  para: string,
+  sub: string,
+  id:number
+}
 
+export interface ICardDataProps {
+  CardData : ICardData[];
+}
+const SwibeCardSec:React.FC<ICardDataProps> = ({CardData}) => {
   return (
     <div>
       <CustomContainer sx={{ marginBottom: "20px" }}>
@@ -108,9 +54,9 @@ const SwibeCardSec = () => {
             modules={[Autoplay]}
             className="mySwiper"
           >
-            {CardData.map((e: any, index) => {
+            {CardData.map((e) => {
               return (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={e.id}>
                   <SwipeCardWarp>
                     <ScTitle>{e.title}</ScTitle>
                     <ScPara>{e.para}</ScPara>

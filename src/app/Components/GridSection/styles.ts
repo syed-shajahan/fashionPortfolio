@@ -8,7 +8,7 @@ import styled from "@mui/system/styled";
 export const GridWrapBox = styled(Box)(() => ({
   position: "relative",
   width: "100% !important",
-  paddingTop:"62%",
+  paddingTop:"65%",
   overflow:"hidden",
   borderRadius:"16px",
 }));
