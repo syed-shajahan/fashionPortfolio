@@ -5,7 +5,8 @@ import { GridWrapBox, GridWrapImg } from "./styles";
 import { CustomContainer } from "../Banner/styles";
 import About from "../About";
 import ListCards from "../List-Cards";
-import listDatas from '../List-Cards/listCards.json';
+import listData from "../List-Cards/listCards.json";
+
 const GridSec = () => {
   return (
     <>
@@ -27,7 +28,7 @@ const GridSec = () => {
               </Box>
             </Grid>
             <Grid lg={6} md={12} sm={12} xs={12}>
-              <ListCards listData={listDatas} />
+              <ListCards listData={listData} />
             </Grid>
             <Grid lg={6} md={12} sm={12} xs={12}>
               <GridWrapBox sx={{ paddingTop: "97%!important" }}>

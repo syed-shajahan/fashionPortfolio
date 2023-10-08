@@ -10,26 +10,26 @@ import { Box } from '@mui/material';
 import { AboutSubTxt } from '../About/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-export interface IlistDatas{
+export interface IlistDatas {
+  id: number;
   list_Title: string;
-  list_desc:string;
+  list_desc: string;
 }
-
-export interface IlistDatasProps{
+export interface IcardListProps{
   listData: IlistDatas[];
 }
 
-const ListCards:React.FC<IlistDatasProps>=({listData}) => {
+const ListCards:React.FC<IcardListProps>=({listData}) => {
   return (
     <>
       <ListBlock>
-        {listData.map((listDatas) => (
-          <ListItemBlock key={listDatas.list_Title}>
+        {listData.map((e) => (
+          <ListItemBlock key={e.id}>
             <ListBlockWarp>
               <Box>
-                <ListItemTitle>{listDatas.list_Title}</ListItemTitle>
+                <ListItemTitle>{e.list_Title}</ListItemTitle>
                 <AboutSubTxt style={{ maxWidth: '536px' }}>
-                  {listDatas.list_desc}
+                  {e.list_desc}
                 </AboutSubTxt>
               </Box>
               <IcnWrap>
