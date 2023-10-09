@@ -22,7 +22,7 @@ export const ListItemBlock = styled(ListItem)(() => ({
   '  &:hover ': {
     backgroundColor: '#3B3B3D',
     transform: 'translateY(-5px)',
-    boxShadow: "0px 20px 25px #0000004d",
+    boxShadow: '0px 20px 25px #0000004d',
     '& $IcnWrap': {
       transform: 'translateY(-10px)',
     },
@@ -62,4 +62,22 @@ export const IcnWrap = styled(Box)(() => ({
   '& svg path': {
     fill: '#ffff',
   },
+}));
+
+export const BanContent = styled(Box)(() => ({
+  width: '100%',
+  height: '1000%',
+  // backgroundColor: '#ffc0cb38',
+  display: 'block',
+  position: 'absolute',
+  left: '0px',
+  top: '0px',
+  padding:"90px 120px"
+}));
+
+export const Minilogo= styled(Image)(()=>({
+  width: "79px !important",
+  height: "31px !important",
+  flexShrink: "0",
+  position:"relative"
 }));
