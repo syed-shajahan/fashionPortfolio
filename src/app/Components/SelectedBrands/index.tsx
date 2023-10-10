@@ -67,7 +67,7 @@ const SelectedBrands = () => {
                   layout="fill"
                   alt="model"
                 />
-                <BanContent className="BanContentStyle">
+                <BanContent className="BanContentStyle animation">
                   <Minilogo
                     src="/assets/images/minilogo.svg"
                     width={14}
@@ -117,7 +117,7 @@ const SelectedBrands = () => {
                   layout="fill"
                   alt="model"
                 />
-                <BanContent className="BanContentStyle">
+                <BanContent className="BanContentStyle animation">
                   <Minilogo
                     src="/assets/images/minilogo.svg"
                     width={14}
@@ -167,7 +167,7 @@ const SelectedBrands = () => {
                   layout="fill"
                   alt="model"
                 />
-                <BanContent className="BanContentStyle">
+                <BanContent className="BanContentStyle animation">
                   <Minilogo
                     src="/assets/images/minilogo.svg"
                     width={14}
@@ -217,7 +217,7 @@ const SelectedBrands = () => {
                   layout="fill"
                   alt="model"
                 />
-                <BanContent className="BanContentStyle">
+                <BanContent className="BanContentStyle animation">
                   <Minilogo
                     src="/assets/images/minilogo.svg"
                     width={14}

@@ -65,6 +65,13 @@ body {
 
 .BanContentStyle {
   background-color: #121212ab;
+}
+
+.BanContentStyle.bg-none{
+  background-color: transparent;
+}
+
+.BanContentStyle.animation{
   animation: 2s bgChanger ease-in-out infinite;
   transition: 2s ease-in-out infinite;
 }
@@ -92,5 +99,10 @@ body {
 
 .sb_ancer:hover .sb_icn{
   transform: rotate(0deg);
+}
 
+.BanContentStyle.cusmtomBnaContentStyle{
+  position: relative;
+  top: 0;
+  left: 0;
 }

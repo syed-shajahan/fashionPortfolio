@@ -9,7 +9,7 @@ export const CustomContainer = styled(Box)(({ theme }) => ({
     width: "100%",
     maxWidth: "1840px",
     margin: "auto",
-    padding: "0px 1opx"
+    padding: "0px 10px"
   }));
 
 export const BannerCard = styled(Box)(({ theme }) => ({

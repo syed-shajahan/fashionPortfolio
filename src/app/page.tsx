@@ -9,6 +9,7 @@ import GridSec from "./Components/GridSection";
 // data passed from below
 import  CardData from "./Components/Swipecard/swipeCards.json"
 import SelectedBrands from "./Components/SelectedBrands";
+import ContactCard from "./Components/Contact";
 export default function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Home() {
       <BrandSection/>
       <GridSec/>
       <SelectedBrands />
+      <ContactCard />
     </>
   );
 }
