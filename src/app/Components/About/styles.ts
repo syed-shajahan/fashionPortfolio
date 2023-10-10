@@ -45,3 +45,6 @@ export const AboutSubTxt = styled(Typography)(() => ({
     letterSpacing: "0.96px",
     marginBottom: "10px"
 }));
+
+
+

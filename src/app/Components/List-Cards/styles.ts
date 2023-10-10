@@ -67,12 +67,12 @@ export const IcnWrap = styled(Box)(() => ({
 export const BanContent = styled(Box)(() => ({
   width: '100%',
   height: '1000%',
-  // backgroundColor: '#ffc0cb38',
+  backgroundColor: '##000000ad',
   display: 'block',
   position: 'absolute',
   left: '0px',
   top: '0px',
-  padding:"90px 120px"
+  padding:"90px 120px",
 }));
 
 export const Minilogo= styled(Image)(()=>({
