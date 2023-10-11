@@ -10,7 +10,7 @@ const Header = () => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
 
-      setScrolling(prevScrollPos > currentScrollPos);
+      setScrolling(prevScrollPos < currentScrollPos);
       setPrevScrollPos(currentScrollPos);
     };
 

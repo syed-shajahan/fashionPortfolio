@@ -12,8 +12,8 @@ interface ScrollProps{
 
 export const CustomAppBar = styled(AppBar)<ScrollProps>(({ theme, scrolling  }) => ({
   position: "fixed",
-  width:scrolling  ? "80%" : "100%",
-  left: scrolling  ? "60%" : "0px",
+  width:scrolling  ? "100%" : "80%",
+  left: scrolling  ? "0" : "60%",
   background: "#1212126e",
   padding: "6px 0px",
   display: "flex",
