@@ -15,11 +15,11 @@ export interface IlistDatas {
   list_Title: string;
   list_desc: string;
 }
-export interface IcardListProps{
+export interface IcardListProps {
   listData: IlistDatas[];
 }
 
-const ListCards:React.FC<IcardListProps>=({listData}) => {
+const ListCards: React.FC<IcardListProps> = ({ listData }) => {
   return (
     <>
       <ListBlock>

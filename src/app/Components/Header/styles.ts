@@ -20,7 +20,7 @@ export const CustomAppBar = styled(AppBar)<ScrollProps>(({ theme, scrolling  }) 
   marginBottom: "15px",
   backdropFilter: "blur(2px)",
   transition:"0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
-  top:scrolling  ? "0" : "15px",
+  top: "0",
 }));
 
 export const CustomToolbar = styled(Toolbar)(({ theme }) => ({

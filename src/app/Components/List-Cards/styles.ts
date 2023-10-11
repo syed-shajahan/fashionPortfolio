@@ -9,6 +9,7 @@ import ListItem from '@mui/material/ListItem';
 export const ListBlock = styled(List)(() => ({
   display: 'block',
   width: '100%',
+  padding:"0px"
 }));
 
 export const ListItemBlock = styled(ListItem)(() => ({

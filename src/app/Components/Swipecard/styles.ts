@@ -2,6 +2,7 @@
 import React from 'react';
 import {Box, Typography} from '@mui/material'; 
 import styled from '@mui/system/styled';
+import Link from 'next/link';
 
 export const SwipeCardWarp =styled(Box)(({theme})=>({
     borderRadius: "16px",
@@ -35,14 +36,15 @@ export const ScPara =styled(Typography)(({theme})=>({
     userSelect:"none",
 }));
 
-export const ScSub =styled(Typography)(({theme})=>({
+export const ScSub =styled(Link)(({theme})=>({
     color: 'rgba(255, 255, 255, 0.70)',
     fontFamily: "Poppins, sans-serif",
     fontSize: '16px',
     fontStyle: 'normal',
     fontWeight: 400,
     lineHeight: '23px', 
-    textTransform:"uppercase"
+    textTransform:"uppercase",
+    textDecoration:"none"
 }));
 
 

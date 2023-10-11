@@ -60,7 +60,7 @@ const SwibeCardSec:React.FC<ICardDataProps> = ({CardData}) => {
                   <SwipeCardWarp>
                     <ScTitle>{e.title}</ScTitle>
                     <ScPara>{e.para}</ScPara>
-                    <ScSub>
+                    <ScSub href="#">
                       {e.sub}
                       <Box
                         component="span"

@@ -6,7 +6,7 @@ export const ContactSec = styled(Box)(() => ({
   width: '100%',
   background: '#CEBD63',
   margin: '24px 0px',
-  padding: '20px',
+  padding: '62px 121px',
   borderRadius: '16px',
   position: 'relative',
 }));
@@ -33,7 +33,7 @@ export const GitLink = styled(Link)(() => ({
   alignItems: 'center',
   background: '#000',
   textDecoration: 'none',
-  padding: '12px 15px',
+  padding: '12px',
   borderRadius: '8px',
   backGround: '#202124',
   color: 'rgba(255, 255, 255, 0.70)',
@@ -43,8 +43,9 @@ export const GitLink = styled(Link)(() => ({
   fontWeight: '500',
   lineHeight: '24px',
   letterSpacing: '0.96px',
-  maxWidth: '183px',
+  maxWidth: '220px',
   transition: '0.3s',
+  whiteSpace:"nowrap",
   flexShrink: 0,
   '&:hover': {
     transform: 'scale(0.90)',
@@ -54,7 +55,7 @@ export const GitLink = styled(Link)(() => ({
     },
   },
   '& svg': {
-    marginLeft: 'auto',
+    marginLeft: '10px',
     verticalAlign: 'middle',
     transform: 'rotate(320deg)',
     transition: '0.3s',

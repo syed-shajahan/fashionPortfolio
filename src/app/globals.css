@@ -67,11 +67,11 @@ body {
   background-color: #121212ab;
 }
 
-.BanContentStyle.bg-none{
+.BanContentStyle.bg-none {
   background-color: transparent;
 }
 
-.BanContentStyle.animation{
+.BanContentStyle.animation {
   animation: 2s bgChanger ease-in-out infinite;
   transition: 2s ease-in-out infinite;
 }
@@ -97,12 +97,23 @@ body {
   transition: 0.8s;
 }
 
-.sb_ancer:hover .sb_icn{
+.sb_ancer:hover .sb_icn {
   transform: rotate(0deg);
 }
 
-.BanContentStyle.cusmtomBnaContentStyle{
+.BanContentStyle.cusmtomBnaContentStyle {
   position: relative;
   top: 0;
   left: 0;
+}
+
+.banConMiniTitle {
+  color: rgba(32, 33, 36, 0.70);
+  font-family: 'inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 1.2px;
+  margin-bottom: 46px;
 }

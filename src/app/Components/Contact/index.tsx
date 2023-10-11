@@ -3,26 +3,28 @@ import React from 'react';
 import { ContactDesc, ContactSec, ContactSecFoot, GitLink } from './styles';
 import { CustomContainer } from '../Banner/styles';
 import { BanContent } from '../List-Cards/styles';
-import { Typography } from '@mui/material';
+import { Typography , Box} from '@mui/material';
 import Link from 'next/link';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Contact } from './constant';
+
 
 const ContactCard = () => {
   return (
     <div>
       <CustomContainer>
         <ContactSec>
-          <BanContent className="BanContentStyle cusmtomBnaContentStyle bg-none">
-            <Typography variant="h3">CONTACT</Typography>
+          <Box>
+            <Typography variant="h3"  className="banConMiniTitle">CONTACT</Typography>
             <ContactSecFoot>
-              <ContactDesc>LETS MAKE YOUR FASHION BRAND SHINE</ContactDesc>
+              <ContactDesc>{Contact.CONTACT_DESC} </ContactDesc>
 
               <GitLink href="#">
-                GET IN TOUCH
-                <ArrowForwardIcon />
+                {Contact.TOUCH}
+                <ArrowForwardIcon/>
               </GitLink>
             </ContactSecFoot>
-          </BanContent>
+          </Box>
         </ContactSec>
       </CustomContainer>
     </div>
