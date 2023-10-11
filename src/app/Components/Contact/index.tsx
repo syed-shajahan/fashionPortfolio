@@ -14,7 +14,6 @@ const ContactCard = () => {
         <ContactSec>
           <BanContent className="BanContentStyle cusmtomBnaContentStyle bg-none">
             <Typography variant="h3">CONTACT</Typography>
-
             <ContactSecFoot>
               <ContactDesc>LETS MAKE YOUR FASHION BRAND SHINE</ContactDesc>
 
