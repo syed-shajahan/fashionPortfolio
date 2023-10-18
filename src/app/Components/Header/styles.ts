@@ -9,7 +9,6 @@ import { List, ListItem } from "@mui/material";
 interface ScrollProps{
   scrolling  : boolean;
 }
-
 export const CustomAppBar = styled(AppBar)<ScrollProps>(({ theme, scrolling  }) => ({
   position: "fixed",
   width:scrolling  ? "100%" : "80%",
