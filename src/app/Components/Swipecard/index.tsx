@@ -25,11 +25,7 @@ const SwibeCardSec:React.FC<ICardDataProps> = ({CardData}) => {
         <Box sx={{ flexGrow: 1 }}>
           <Swiper
             spaceBetween={30}
-            centeredSlides={true}
-            autoplay={{
-              delay: 1000,
-              disableOnInteraction: false,
-            }}
+            centeredSlides={false}
             freeMode={true}
             speed={1000}
             loop={true}

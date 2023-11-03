@@ -11,6 +11,7 @@ import  CardData from "./Components/Swipecard/swipeCards.json"
 import SelectedBrands from "./Components/SelectedBrands";
 import ContactCard from "./Components/Contact";
 import FolowusStrip from "./Components/FollowusStrip";
+import SocialMediaCards from "./Components/socialmedia-cards";
 export default function Home() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function Home() {
       <SelectedBrands />
       <ContactCard />
       <FolowusStrip />
+      <SocialMediaCards />
     </>
   );
 }
