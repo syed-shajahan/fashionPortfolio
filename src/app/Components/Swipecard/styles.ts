@@ -22,7 +22,6 @@ export const ScTitle =styled(Typography)(({theme})=>({
     lineHeight: 'normal',
     textTransform:"uppercase",
     marginBottom:"12px",
-    userSelect:"none",
 }));
 
 export const ScPara =styled(Typography)(({theme})=>({
@@ -33,7 +32,6 @@ export const ScPara =styled(Typography)(({theme})=>({
     fontWeight: '300',
     lineHeight: '23px', 
     marginBottom:"67px",
-    userSelect:"none",
 }));
 
 export const ScSub =styled(Link)(({theme})=>({

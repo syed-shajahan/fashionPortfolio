@@ -15,6 +15,11 @@ body {
   box-sizing: border-box;
 }
 
+::selection{
+  background-color:  #121212 !important;
+  color: #ffff !important;
+}
+
 /* custom css below */
 
 .titleTag {
@@ -118,3 +123,8 @@ body {
   margin-bottom: 46px;
 }
 
+
+.sb_icn.sb_icn_sm{
+  width: 36px;
+  height: 36px;
+}

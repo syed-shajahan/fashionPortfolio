@@ -3,15 +3,15 @@ import React, { useRef, useState } from 'react';
 import { CustomContainer } from '../Banner/styles';
 import Box from '@mui/material/Box';
 
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-import { ScTitle, SwipeCardWarp, ScSub, ScPara } from '../Swipecard/styles';
+import { ScTitle, SwipeCardWarp, ScPara } from '../Swipecard/styles';
 import { IcnWarpTop, SwipeCardSec } from './styles';
-import { GitLink } from '../Contact/styles';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import socialData from './data.json';
+import { IcnWrap } from '../List-Cards/styles';
 
 const SocialMediaCards = () => {
   return (
@@ -48,9 +48,12 @@ const SocialMediaCards = () => {
             {socialData.map((data, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <SwipeCardWarp sx={{ maxHeight: '250px !important' }}>
+                  <SwipeCardWarp sx={{ maxHeight: '260px !important' }}>
                     <IcnWarpTop>
                       <InstagramIcon sx={{ color: '#fff' }} />
+                      <IcnWrap className="sb_icn sb_icn_sm">
+                        <ArrowForwardIcon />
+                      </IcnWrap>
                     </IcnWarpTop>
                     <Box>
                       <ScTitle>{data.title}</ScTitle>
