@@ -127,4 +127,5 @@ body {
 .sb_icn.sb_icn_sm{
   width: 36px;
   height: 36px;
+  margin-right: 0px !important;
 }

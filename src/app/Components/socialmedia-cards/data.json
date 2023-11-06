@@ -3,21 +3,25 @@
     {
       "title": "INSTAGRAM",
       "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "id": 1
+      "id": 1,
+      "image": "/assets/icn/instagram.png"
     },
     {
       "title": "TWITTER",
       "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "id": 2
+      "id": 2,
+      "image": "/assets/icn/twitter.png"
     },
     {
       "title": "DRIBBBLE",
       "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "id": 3
+      "id": 3,
+      "image": "/assets/icn/dribbble.png"
     },
     {
       "title": "BEHANCE",
       "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "id": 4
+      "id": 4,
+      "image": "/assets/icn/behance.png"
     }
   ]

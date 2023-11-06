@@ -51,7 +51,7 @@ export const IcnWrap = styled(Box)(() => ({
   width: '48px',
   height: '48px',
   flexShrink: '0',
-  backgroundColor: '#7A7A7A',
+  backgroundColor: '#3e3e40',
   border: '1px solid #7A7A7A',
   overflow: 'hidden',
   borderRadius: '100%',

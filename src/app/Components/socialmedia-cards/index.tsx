@@ -12,6 +12,7 @@ import { IcnWarpTop, SwipeCardSec } from './styles';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import socialData from './data.json';
 import { IcnWrap } from '../List-Cards/styles';
+import Image from 'next/image';
 
 const SocialMediaCards = () => {
   return (
@@ -50,7 +51,7 @@ const SocialMediaCards = () => {
                 <SwiperSlide key={index}>
                   <SwipeCardWarp sx={{ maxHeight: '260px !important' }}>
                     <IcnWarpTop>
-                      <InstagramIcon sx={{ color: '#fff' }} />
+                      <Image src={data.image} alt="" width={20} height={20} />
                       <IcnWrap className="sb_icn sb_icn_sm">
                         <ArrowForwardIcon />
                       </IcnWrap>
