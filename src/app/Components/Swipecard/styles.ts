@@ -30,7 +30,7 @@ export const ScPara =styled(Typography)(({theme})=>({
     fontFamily: "Poppins, sans-serif",
     fontSize: '16px',
     fontStyle: 'normal',
-    fontWeight: 400,
+    fontWeight: '300',
     lineHeight: '23px', 
     marginBottom:"67px",
     userSelect:"none",

@@ -44,7 +44,7 @@ export const GitLink = styled(Link)(() => ({
   lineHeight: '24px',
   letterSpacing: '0.96px',
   maxWidth: '220px',
-  transition: '0.3s',
+  transition: '0.5s',
   whiteSpace:"nowrap",
   flexShrink: 0,
   '&:hover': {
@@ -58,6 +58,6 @@ export const GitLink = styled(Link)(() => ({
     marginLeft: '10px',
     verticalAlign: 'middle',
     transform: 'rotate(320deg)',
-    transition: '0.3s',
+    transition: '0.5s',
   },
 }));

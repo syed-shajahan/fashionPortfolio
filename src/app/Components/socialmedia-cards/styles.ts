@@ -8,3 +8,7 @@ padding:"5px 0px",
 marginBottom:"30px"
 }));
 
+export const SwipeCardSec = styled(Box)(()=>({
+    display:"block",
+    marginBottom:"69px",
+}))
