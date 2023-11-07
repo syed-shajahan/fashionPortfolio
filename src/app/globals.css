@@ -31,6 +31,7 @@ body {
   line-height: 76px;
   letter-spacing: 0.4px;
   margin-bottom: 24px;
+  text-transform: uppercase !important;
 }
 
 .paras {

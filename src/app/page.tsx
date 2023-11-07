@@ -12,6 +12,7 @@ import SelectedBrands from "./Components/SelectedBrands";
 import ContactCard from "./Components/Contact";
 import FolowusStrip from "./Components/FollowusStrip";
 import SocialMediaCards from "./Components/socialmedia-cards";
+import Latestnews from "./Components/latest-news";
 export default function Home() {
   return (
     <>
@@ -24,6 +25,7 @@ export default function Home() {
       <ContactCard />
       <FolowusStrip />
       <SocialMediaCards />
+      <Latestnews />
     </>
   );
 }
