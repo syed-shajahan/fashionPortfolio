@@ -21,9 +21,11 @@ const SelectedBrands = () => {
   return (
     <>
       <CustomContainer sx={{ marginBottom: '20px' }}>
+        <Box className="titelWarp">
         <Typography variant="h3" className="titleTag">
           Selected Brands
         </Typography>
+        </Box>
 
         <Box sx={{ flexGrow: 1 }}>
           <Swiper

@@ -6,17 +6,29 @@ import Typography from '@mui/material/Typography';
 import { GitLink } from '../Contact/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Contact } from '../Contact/constant';
+import { IcnWrap } from '../List-Cards/styles';
+import Link from 'next/link';
 const Latestnews = () => {
   return (
     <Box>
       <CustomContainer>
-        <Typography variant="h3" className="titleTag">
-          Latest News
-        </Typography>
-        <GitLink href="#">
-          <ArrowForwardIcon />
-          SEE ALL
-        </GitLink>
+        <Box
+          className="titelWarp"
+          display={'flex'}
+          alignItems={'center'}
+          justifyContent={'space-between'}
+        >
+          <Typography variant="h3" className="titleTag">
+            Latest News
+          </Typography>
+
+          <Link href="#"  className='links_target'>
+            <IcnWrap className="sb_icn sb_icn_sm">
+              <ArrowForwardIcon />
+            </IcnWrap>
+            See All
+          </Link>
+        </Box>
       </CustomContainer>
     </Box>
   );
