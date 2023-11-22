@@ -8,6 +8,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Contact } from '../Contact/constant';
 import { IcnWrap } from '../List-Cards/styles';
 import Link from 'next/link';
+import { LinkTag } from './styles';
 const Latestnews = () => {
   return (
     <Box>
@@ -22,12 +23,12 @@ const Latestnews = () => {
             Latest News
           </Typography>
 
-          <Link href="#"  className='links_target'>
+          <LinkTag href="#"  className='links_target'>
             <IcnWrap className="sb_icn sb_icn_sm">
               <ArrowForwardIcon />
             </IcnWrap>
-            See All
-          </Link>
+             See All
+          </LinkTag>
         </Box>
       </CustomContainer>
     </Box>

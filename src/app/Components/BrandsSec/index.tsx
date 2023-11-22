@@ -18,7 +18,8 @@ const BrandLogos=[
     <>
     <CustomContainer>
 
-      <Box
+      <Box  
+      className="scrollAnimation"
         sx={{
           display: "flex",
           justifyContent: "space-around",

@@ -6,7 +6,7 @@ const FolowusStrip = () => {
   return (
     <div>
       <CustomContainer>
-        <FusBoxWarp>
+        <FusBoxWarp className='scrollAnimation'>
           {follow.map((event) => {
             return <FusBox key={event.id}>{event.followTxt}</FusBox>;
           })}

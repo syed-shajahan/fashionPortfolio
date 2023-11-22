@@ -128,9 +128,27 @@ body {
   margin-bottom: 46px;
 }
 
-
 .sb_icn.sb_icn_sm{
   width: 36px;
   height: 36px;
   margin-right: 0px !important;
+}
+
+.scrollAnimation{
+  animation: scroll 10s infinite ease-in-out forwards;
+  transition: scroll 10s infinite ease-in-out forwards;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%); /* Start offscreen to the right */
+  }
+
+  to {
+    transform: translateX(-100%); /* Move offscreen to the left */
+  }
+
+  50% {
+    transform: translateX(-100%); /* Pause at the end of each iteration */
+  }
 }
