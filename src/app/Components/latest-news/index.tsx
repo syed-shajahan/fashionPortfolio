@@ -1,6 +1,6 @@
-import React from 'react';
-import { CustomContainer } from '../Banner/styles';
-import Box from '@mui/material/Box';
+import React from "react";
+import { CustomContainer } from "../Banner/styles";
+import Box from "@mui/material/Box";
 
 import Typography from '@mui/material/Typography';
 import { GitLink } from '../Contact/styles';
@@ -15,9 +15,9 @@ const Latestnews = () => {
       <CustomContainer>
         <Box
           className="titelWarp"
-          display={'flex'}
-          alignItems={'center'}
-          justifyContent={'space-between'}
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"space-between"}
         >
           <Typography variant="h3" className="titleTag">
             Latest News
