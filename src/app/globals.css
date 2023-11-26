@@ -135,20 +135,17 @@ body {
 }
 
 .scrollAnimation{
-  animation: scroll 20s infinite ease-in-out forwards;
-  transition: scroll 20s infinite ease-in-out forwards;
+  animation: scroll 8s linear infinite ;
+  transition: scroll 8s linear infinite ;
 }
 
 @keyframes scroll {
   from {
-    transform: translateX(100%); /* Start offscreen to the right */
+    transform: translateX(100%); 
   }
 
   to {
-    transform: translateX(-100%); /* Move offscreen to the left */
+    transform: translateX(-100%); 
   }
 
-  50% {
-    transform: translateX(-100%); /* Pause at the end of each iteration */
-  }
 }

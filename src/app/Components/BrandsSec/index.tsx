@@ -27,7 +27,7 @@ const BrandLogos=[
           padding:"20px"
         }}
       >
-
+       
         {
             BrandLogos.map((e:any , index)=>{
                 return(
@@ -37,6 +37,7 @@ const BrandLogos=[
                 )
             })
         }
+
       </Box>
     </CustomContainer>
     </>
