@@ -13,13 +13,15 @@ import ContactCard from "./Components/Contact";
 import FolowusStrip from "./Components/FollowusStrip";
 import SocialMediaCards from "./Components/socialmedia-cards";
 import Latestnews from "./Components/latest-news";
+import BrandLogos from "./Components/BrandsSec/data.json";
+
 export default function Home() {
   return (
     <>
       <Header />
       <Banner/>
       <SwibeCardSec CardData={CardData} />
-      <BrandSection/>
+      <BrandSection BrandLogos={BrandLogos}/>
       <GridSec/>
       <SelectedBrands />
       <ContactCard />
