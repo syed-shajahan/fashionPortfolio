@@ -10,11 +10,22 @@ import { Autoplay } from 'swiper/modules';
 import { ScTitle, SwipeCardWarp, ScPara } from '../Swipecard/styles';
 import { IcnWarpTop, SwipeCardSec } from './styles';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import socialData from './data.json';
 import { IcnWrap } from '../List-Cards/styles';
 import Image from 'next/image';
 
-const SocialMediaCards = () => {
+interface ISocialProps{
+  title:string;
+  para:string;
+  id:number;
+  image:string;
+}
+
+interface ISocialData{
+  socialData:ISocialProps[];
+}
+
+
+const SocialMediaCards:React.FC<ISocialData> = ({socialData}) => {
   return (
     <>
       <CustomContainer>
@@ -46,9 +57,9 @@ const SocialMediaCards = () => {
             modules={[Autoplay]}
             className="mySwiper"
           >
-            {socialData.map((data, index) => {
+            {socialData.map((data) => {
               return (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={data.id}>
                   <SwipeCardWarp sx={{ maxHeight: '260px !important' }}>
                     <IcnWarpTop>
                       <Image src={data.image} alt="" width={20} height={20} />

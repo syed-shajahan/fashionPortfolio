@@ -14,19 +14,28 @@ import FolowusStrip from "./Components/FollowusStrip";
 import SocialMediaCards from "./Components/socialmedia-cards";
 import Latestnews from "./Components/latest-news";
 import BrandLogos from "./Components/BrandsSec/data.json";
+import SocialData from './Components/socialmedia-cards/data.json';
+
+const Data={
+  CardData,
+  BrandLogos,
+  SocialData
+}
 
 export default function Home() {
+
+
   return (
     <>
       <Header />
       <Banner/>
-      <SwibeCardSec CardData={CardData} />
-      <BrandSection BrandLogos={BrandLogos}/>
+      <SwibeCardSec CardData={Data.CardData} />
+      <BrandSection brandLogos={Data.BrandLogos}/>
       <GridSec/>
       <SelectedBrands />
       <ContactCard />
       <FolowusStrip />
-      <SocialMediaCards />
+      <SocialMediaCards socialData={Data.SocialData}/>
       <Latestnews />
     </>
   );
