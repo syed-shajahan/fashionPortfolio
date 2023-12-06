@@ -14,7 +14,7 @@ export const LinkTag= styled(Link)(()=>({
     lineHeight: "normal",
     letterSpacing: "0.96px",
     textDecoration:"none",
-    "& sb_icn":{
-        marginRight:"10px !important",
+    "&:hover .sb_icn":{
+    background:"red",
     }
 }))

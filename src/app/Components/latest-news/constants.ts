@@ -1,3 +1,4 @@
 export enum LatestNews {
-    SEEALL = 'SEE ALL'
-} 
+  LATEST_NEWS = 'Latest News',
+  SEE_ALL = 'See All',
+}

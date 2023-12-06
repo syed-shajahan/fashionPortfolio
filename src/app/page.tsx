@@ -15,6 +15,8 @@ import SocialMediaCards from "./Components/socialmedia-cards";
 import Latestnews from "./Components/latest-news";
 import BrandLogos from "./Components/BrandsSec/data.json";
 import SocialData from './Components/socialmedia-cards/data.json';
+import DummyTest from "./Components/dummy/index";
+
 
 const Data={
   CardData,
@@ -27,6 +29,7 @@ export default function Home() {
 
   return (
     <>
+    {/* <DummyTest /> */}
       <Header />
       <Banner/>
       <SwibeCardSec CardData={Data.CardData} />
