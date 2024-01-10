@@ -21,8 +21,8 @@ const Latestnews = () => {
           </Typography>
 
           <LinkTag href="#"  className='links_target'>
-            <IcnWrap className="sb_icn sb_icn_sm" style={{marginRight:"17px !important"}}>
-              <ArrowForwardIcon />
+            <IcnWrap className="sb_icn sb_icn_sm  sb_icn_sm2" >
+              <ArrowForwardIcon className="rotate_icn" />
             </IcnWrap>
             {LatestNews.SEE_ALL}
           </LinkTag>

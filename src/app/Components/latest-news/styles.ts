@@ -14,7 +14,10 @@ export const LinkTag= styled(Link)(()=>({
     lineHeight: "normal",
     letterSpacing: "0.96px",
     textDecoration:"none",
-    "&:hover .sb_icn":{
-    background:"red",
+    "& .rotate_icn":{
+        transition:"0.5s"
+    },
+    "&:hover .rotate_icn":{
+    transform :"rotate(-360deg) !important",
     }
 }))

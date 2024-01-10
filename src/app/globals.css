@@ -134,6 +134,10 @@ body {
   margin-right: 0px !important;
 }
 
+.sb_icn.sb_icn_sm.sb_icn_sm2{
+  margin-right: 17px !important;
+}
+
 .scrollAnimation{
   animation: scroll 8s linear infinite ;
   transition: scroll 8s linear infinite ;
