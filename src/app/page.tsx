@@ -17,11 +17,14 @@ import BrandLogos from "./Components/BrandsSec/data.json";
 import SocialData from './Components/socialmedia-cards/data.json';
 import DummyTest from "./Components/dummy/index";
 
+import LatestNewsData from "./Components/latest-news/latestNewData.json";
+
 
 const Data={
   CardData,
   BrandLogos,
-  SocialData
+  SocialData,
+  LatestNewsData
 }
 
 export default function Home() {
@@ -39,7 +42,7 @@ export default function Home() {
       <ContactCard />
       <FolowusStrip />
       <SocialMediaCards socialData={Data.SocialData}/>
-      <Latestnews />
+      <Latestnews LatestNewsData={Data.LatestNewsData}/>
     </>
   );
 }

@@ -39,6 +39,10 @@ export const BlogCards = styled(Box)(() => ({
     heigth: '100% !important',
     objectFit: 'cover',
     objectPosition: 'center',
+    transition:'0.3s',
+    '&:hover img':{
+        tranform:"0.3s",
+    }
   }
 }));
 export const BlogCardsWarp = styled(Box)(() => ({

@@ -1,0 +1,20 @@
+[
+  {
+    "image": "/assets/images/l1.jpg",
+    "title": "The Power of Influencer Marketing",
+    "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    "id": 1
+  },
+  {
+    "image": "/assets/images/l2.jpg",
+    "title": "Effective Advertising Strategies for Fashion Brands",
+    "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    "id": 3
+  },
+  {
+    "image": "/assets/images/l3.jpg",
+    "title": "Role of Public Relations in Building a Fashion Brand",
+    "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    "id": 2
+  }
+]

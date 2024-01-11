@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { CustomContainer } from '../Banner/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -10,7 +10,19 @@ import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
 import { ScPara, ScTitle } from '../Swipecard/styles';
-const Latestnews = () => {
+
+export interface ILatestNewsProps {
+  image: string;
+  title: string;
+  para: string;
+  id: number;
+}
+
+interface ILatestNewsPropsData {
+  LatestNewsData:  ILatestNewsProps[];
+}
+
+const Latestnews: FC<ILatestNewsPropsData>= ({ LatestNewsData }) => {
   return (
     <Box>
       <CustomContainer>
@@ -20,7 +32,7 @@ const Latestnews = () => {
             display={'flex'}
             alignItems={'center'}
             justifyContent={'space-between'}
-          >
+          > 
             <Typography variant="h3" className="titleTag">
               {LatestNews.LATEST_NEWS}
             </Typography>
@@ -35,33 +47,38 @@ const Latestnews = () => {
 
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
-              <Grid item lg={3}>
-                <BlogCardsWarp>
-                  <BlogCards>
-                    <Image
-                      className="img_aspect"
-                      src="/assets/images/l1.jpg"
-                      alt=""
-                      layout="fill"
-                    />
-                  </BlogCards>
-                  <Box>
-                      <ScTitle>The Power of Influencer Marketing</ScTitle>
-                      <ScPara className='scParaMb'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore.
-                      </ScPara>
-                  </Box>
-
-                  <LinkTag href="#" className="links_target">
-                    <IcnWrap className="sb_icn sb_icn_sm  sb_icn_sm2">
-                      <ArrowForwardIcon className="rotate_icn" />
-                    </IcnWrap>
+              {  LatestNewsData.map((newData, index)=>{
+                return(
+                  <Grid item lg={4} key={index}>
+                  <BlogCardsWarp>
+                    <BlogCards>
+                      <Image
+                        className="img_aspect"
+                        src={newData.image}
+                        alt=""
+                        layout="fill"
+                      />
+                    </BlogCards>
+                    <Box>
+                      <ScTitle>{newData.title}</ScTitle>
+                      <ScPara className="scParaMb">{newData.para}</ScPara>
+                    </Box>
+  
+                    <LinkTag href="#" className="links_target">
+                      <IcnWrap className="sb_icn sb_icn_sm  sb_icn_sm2">
+                        <ArrowForwardIcon className="rotate_icn" />
+                      </IcnWrap>
                       READ MORE
-                  </LinkTag>
-                </BlogCardsWarp>
-              </Grid>
-            </Grid>
+                    </LinkTag>
+                  </BlogCardsWarp>
+                </Grid>
+                )
+                 
+                })
+              }
+
+       
+                        </Grid>
           </Box>
         </Box>
       </CustomContainer>
