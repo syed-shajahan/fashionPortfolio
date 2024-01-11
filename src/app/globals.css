@@ -151,5 +151,9 @@ body {
   to {
     transform: translateX(-100%); 
   }
-
 }
+
+.scParaMb{
+  margin-bottom: 43px!important;
+}
+
