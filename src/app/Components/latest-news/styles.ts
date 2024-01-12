@@ -38,7 +38,7 @@ export const BlogCardsWarp = styled(Box)(() => ({
   background: '#2B2B2D',
   minHeight: '700px',
   '& img': {
-    transition: '1200ms',
+    transition: '2s',
   },
   '&:hover img': {
     transform: 'scale(1.3)',
