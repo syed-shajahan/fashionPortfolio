@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { IcnWrap } from '../List-Cards/styles';
-import { BlogCards, BlogCardsWarp, LinkTag } from './styles';
+import { BlogCards, BlogCardsWarp, LNewsSec, LinkTag } from './styles';
 import { LatestNews } from './constants';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
@@ -19,20 +19,20 @@ export interface ILatestNewsProps {
 }
 
 interface ILatestNewsPropsData {
-  LatestNewsData:  ILatestNewsProps[];
+  LatestNewsData: ILatestNewsProps[];
 }
 
-const Latestnews: FC<ILatestNewsPropsData>= ({ LatestNewsData }) => {
+const Latestnews: FC<ILatestNewsPropsData> = ({ LatestNewsData }) => {
   return (
     <Box>
       <CustomContainer>
-        <Box>
+        <LNewsSec>
           <Box
             className="titelWarp"
             display={'flex'}
             alignItems={'center'}
             justifyContent={'space-between'}
-          > 
+          >
             <Typography variant="h3" className="titleTag">
               {LatestNews.LATEST_NEWS}
             </Typography>
@@ -47,40 +47,38 @@ const Latestnews: FC<ILatestNewsPropsData>= ({ LatestNewsData }) => {
 
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
-              {  LatestNewsData.map((newData, index)=>{
-                return(
+              {LatestNewsData.map((newData, index) => {
+                return (
                   <Grid item lg={4} key={index}>
-                  <BlogCardsWarp>
-                    <BlogCards>
-                      <Image
-                        className="img_aspect"
-                        src={newData.image}
-                        alt=""
-                        layout="fill"
-                      />
-                    </BlogCards>
-                    <Box>
-                      <ScTitle>{newData.title}</ScTitle>
-                      <ScPara className="scParaMb">{newData.para}</ScPara>
-                    </Box>
-  
-                    <LinkTag href="#" className="links_target">
-                      <IcnWrap className="sb_icn sb_icn_sm  sb_icn_sm2">
-                        <ArrowForwardIcon className="rotate_icn" />
-                      </IcnWrap>
-                      READ MORE
-                    </LinkTag>
-                  </BlogCardsWarp>
-                </Grid>
-                )
-                 
-                })
-              }
+                    <BlogCardsWarp>
+                      <BlogCards>
+                        <Image
+                          className="img_aspect"
+                          src={newData.image}
+                          alt=""
+                          layout="fill"
+                        />
+                      </BlogCards>
+                      <Box>
+                        <ScTitle className="scTitle_newTitle">
+                          {newData.title}
+                        </ScTitle>
+                        <ScPara className="scParaMb">{newData.para}</ScPara>
+                      </Box>
 
-       
-                        </Grid>
+                      <LinkTag href="#" className="links_target">
+                        <IcnWrap className="sb_icn sb_icn_sm  sb_icn_sm2">
+                          <ArrowForwardIcon className="rotate_icn" />
+                        </IcnWrap>
+                        {LatestNews.READ_MORE}
+                      </LinkTag>
+                    </BlogCardsWarp>
+                  </Grid>
+                );
+              })}
+            </Grid>
           </Box>
-        </Box>
+        </LNewsSec>
       </CustomContainer>
     </Box>
   );
