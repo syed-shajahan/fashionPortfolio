@@ -18,6 +18,7 @@ import SocialData from './Components/socialmedia-cards/data.json';
 import DummyTest from "./Components/dummy/index";
 
 import LatestNewsData from "./Components/latest-news/latestNewData.json";
+import NewsLetterSec from "./Components/newsletter";
 
 
 const Data={
@@ -43,6 +44,7 @@ export default function Home() {
       <FolowusStrip />
       <SocialMediaCards socialData={Data.SocialData}/>
       <Latestnews LatestNewsData={Data.LatestNewsData}/>
+      <NewsLetterSec />
     </>
   );
 }

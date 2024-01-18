@@ -15,8 +15,8 @@ body {
   box-sizing: border-box;
 }
 
-::selection{
-  background-color:  #121212 !important;
+::selection {
+  background-color: #121212 !important;
   color: #ffff !important;
 }
 
@@ -128,36 +128,83 @@ body {
   margin-bottom: 46px;
 }
 
-.sb_icn.sb_icn_sm{
+.sb_icn.sb_icn_sm {
   width: 36px;
   height: 36px;
   margin-right: 0px !important;
 }
 
-.sb_icn.sb_icn_sm.sb_icn_sm2{
+.sb_icn.sb_icn_sm.sb_icn_sm2 {
   margin-right: 17px !important;
 }
 
-.scrollAnimation{
-  animation: scroll 8s linear infinite ;
-  transition: scroll 8s linear infinite ;
+.scrollAnimation {
+  animation: scroll 8s linear infinite;
+  transition: scroll 8s linear infinite;
+}
+
+.nlForm {
+  display: flex;
+  align-items: center;
+}
+
+.nLinput input {
+  display: inline-flex;
+  padding: 12px ;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.nlForm .MuiTextField-root {
+  margin: 0px !important;
+}
+
+ .MuiInputBase-colorPrimary{
+  border: transparent;
+}
+
+
+.nLinput input:focus {
+  border: 1px solid #FFF !important;
+}
+
+.nLinput input:focus-within {
+  border: 1px solid #FFF !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.23);
+  color: #fff !important;
+}
+
+
+.nLinput input::placeholder {
+  color: #fff !important;
 }
 
 @keyframes scroll {
   from {
-    transform: translateX(100%); 
+    transform: translateX(100%);
   }
 
   to {
-    transform: translateX(-100%); 
+    transform: translateX(-100%);
   }
 }
 
-.scParaMb{
-  margin-bottom: 43px!important;
+.scParaMb {
+  margin-bottom: 43px !important;
 }
 
 
-.scTitle_newTitle{
+.scTitle_newTitle {
   font-size: 20px !important;
+}
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: white;
+  /* Set the desired color for the active state */
+
 }

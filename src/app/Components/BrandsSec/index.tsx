@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useState, useEffect } from "react";
 import { Box } from "@mui/material";
 import { ImgTags } from "./styles";
 
@@ -11,12 +12,30 @@ interface IBrandLogoProps {
 }
 
 const BrandSection: React.FC<IBrandLogoProps> = ({ brandLogos }) => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Calculate the translation
+  // Adjust the multiplier (-0.5 in this case) to control the speed
+  const translateX = -5 * scrollPosition;
   return (
     <>
       <CustomContainer>
 
         <Box
-          className="scrollAnimation"
+ style={{ transform: `translateX(${scrollPosition}px)` }}
           sx={{
             display: "flex",
             justifyContent: "space-around",
