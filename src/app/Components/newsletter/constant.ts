@@ -1,0 +1,5 @@
+export enum NewsLetterTitles {
+    NEWS_LETTER= 'NEWSLETTER',
+    TOP_TITLE = 'GET INSIGHTS BEHIND THE SCENES',
+    SUBSCRIBE ='SUBSCRIBE'
+}

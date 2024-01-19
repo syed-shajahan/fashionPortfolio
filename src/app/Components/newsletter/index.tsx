@@ -9,8 +9,137 @@ import {
   NewLetterImg,
   NewSec,
 } from './styles';
-import { Box, Button, Grid, TextField } from '@mui/material';
+import { Box
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+                                                                                                                                                                                                                                                                                                                                                        , Grid, TextField } from '@mui/material';
 import Image from 'next/image';
+import {NewsLetterTitles} from './constant'
 const NewsLetterSec = () => {
   const [formData, setFormData] = useState({
     Email: '',
@@ -32,7 +161,7 @@ const NewsLetterSec = () => {
         <NewSec>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2} alignItems={'center'}>
-              <Grid item xs={8}>
+              <Grid item xs={9}>
                 <Box sx={{ flexGrow: 1 }}>
                   <Grid container spacing={2} alignItems={'center'}>
                     <Grid item xs={2}>
@@ -46,19 +175,18 @@ const NewsLetterSec = () => {
                       </NewLetterImg>
                     </Grid>
                     <Grid item xs={10}>
-                      <LetterTittleMin variant="h6">NEWSLETTER</LetterTittleMin>
+                      <LetterTittleMin variant="h6">{NewsLetterTitles.TOP_TITLE}</LetterTittleMin>
                       <LetterTittle variant="h3">
-                        GET INSIGHTS BEHIND THE SCENES
+                        {NewsLetterTitles.TOP_TITLE}
                       </LetterTittle>
                     </Grid>
                   </Grid>
                 </Box>
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={3}>
                 <Box sx={{ flexGrow: 1 }}>
                   <form onSubmit={handleSubmit} className='nlForm'>
                     <TextField
-                      label="YOUR EMAIL"
                       fullWidth
                       margin="normal"
                       value={formData.Email}
@@ -67,7 +195,7 @@ const NewsLetterSec = () => {
                       className='nLinput'
                     />
                     <NBtn type="submit" >
-                      SUBSCRIBE
+                        {NewsLetterTitles.SUBSCRIBE}
                     </NBtn>
                   </form>
                 </Box>
